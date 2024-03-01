@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="h1">Guess My Number!</h1>
+      <button class="btn rules-btn">Rules!</button>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again">Again!</button>
+      <div id="cta">
+      </div>
+      <div class="number">?</div>
+    </header>
+    <div class="rulesback hidden"></div>
+    <div class="rules hidden">
+      <p class="ruleshead">Rules!</p>
+      <p class="rulescloser">&times;</p>
+      <ul class="rulespoints">
+        <li>It is an Number Guessing Game!</li>
+        <li>It's an battle between AI and Humans!</li>
+        <li>
+          you have to find the exact number which was already chosen by AI.
+        </li>
+        <li>you got only 20 chances!</li>
+        <li>you need to protect the existing score.</li>
+        <li>For each wrong choice you will get 1point minus from the score.</li>
+      </ul>
+      <button class="start-btn starthidden">Start!</button>
+      <a class="views" href="https://hits.seeyoufarm.com"
+        ></a>
+    </div>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
